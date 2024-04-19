@@ -1,0 +1,37 @@
+/* Estilos base para todos os botões */
+.button {
+  text-decoration: none; /* Remove a decoração de texto */
+  color: #ffffff; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Cursor do mouse */
+  transition: all 0.4s ease 0s; /* Transição suave */
+}
+
+/* Estilos quando o cursor passa por cima do botão */
+.button:hover {
+  background-color: #000000; /* Cor de fundo ao passar o cursor */
+}
+
+/* Estilos para botões azuis */
+.blue {
+  background-color: #3E98C7; /* Cor de fundo azul */
+}
+
+/* Estilos para botões vermelhos */
+.red {
+  background-color: #c73e3e; /* Cor de fundo vermelha */
+}
+
+/* Estilos para botões brancos */
+.white {
+  background-color: rgb(255, 255, 255); /* Cor de fundo branca */
+  color: rgb(0, 0, 0); /* Cor do texto */
+}
+
+/* Estilos para botões brancos quando o cursor passa por cima */
+.white:hover {
+  background-color: #000000; /* Cor de fundo ao passar o cursor */
+  color: #ffffff; /* Cor do texto ao passar o cursor */
+}

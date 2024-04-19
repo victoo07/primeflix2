@@ -1,0 +1,227 @@
+/* Define o tamanho mínimo da altura da classe .container */
+.container {
+  min-height: calc(100vh - 130px); /* A altura mínima será a altura da tela menos 130 pixels */
+  display: block;
+  width: inherit; /* A largura da div será herdada do elemento pai */
+}
+
+/* Estilos para os botões na área de botões */
+.area_buttons button {
+  font-size: 20px; /* Tamanho da fonte */
+  width: 200px; /* Largura dos botões */
+  margin-top: 20px; /* Margem superior */
+  font-weight: bold; /* Peso da fonte */
+}
+
+/* Estiliza o primeiro botão */
+.area_buttons button:nth-child(1) {
+  border: 2px solid #ffffff; /* Borda do botão */
+}
+
+/* Estiliza o segundo botão */
+.area_buttons button:nth-child(2) {
+  border: 2px solid #3E98C7; /* Borda do botão */
+}
+
+/* Efeito de hover nos botões */
+.area_buttons button:nth-child(1):hover,
+.area_buttons button:nth-child(2):hover {
+  border: 2px solid #ffffff; /* Borda do botão ao passar o mouse */
+}
+
+/* Margem direita do primeiro botão */
+.area_buttons button:first-child {
+  margin-right: 30px;
+}
+
+/* Estilos para a seção de título */
+.title {
+  width: 100%; /* Largura total */
+  background-repeat: no-repeat; /* Evita repetição do background */
+  background-size: cover; /* Redimensiona o background para cobrir */
+  background-attachment: fixed; /* Fixa o background */
+  min-height: 410px; /* Altura mínima */
+  height: calc(100vh / 2.5); /* Altura responsiva */
+  max-height: 360px; /* Altura máxima */
+}
+
+/* Estilos para o grid de título */
+.grid_title {
+  max-width: 1150px; /* Largura máxima */
+  margin: 0px auto; /* Centraliza horizontalmente */
+}
+
+/* Estilos para o título */
+.title h1 {
+  font-size: 2.6em !important; /* Tamanho da fonte do título */
+  font-weight: 700; /* Peso da fonte */
+  line-height: 1.5; /* Altura da linha */
+  padding-top: 57px; /* Preenchimento superior */
+  color: #ffffff; /* Cor do texto */
+  font-size: 2.2rem; /* Tamanho da fonte */
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 30%); /* Sombra do texto */
+  width: 800px; /* Largura do título */
+}
+
+/* Estilos para o parágrafo dentro do grid de título */
+.title p {
+  font-size: 1.2em !important; /* Tamanho da fonte do parágrafo */
+  font-weight: 500; /* Peso da fonte */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para os spans dentro do parágrafo do grid de título */
+.grid_title p span {
+  padding: 5px; /* Preenchimento */
+  width: 20px; /* Largura */
+}
+
+/* Estilos para a seção de informações do filme */
+.movie_info {
+  max-width: 1150px; /* Largura máxima */
+  margin: 50px auto; /* Margem */
+}
+
+/* Estilos para os títulos e subtítulos dentro da seção de informações do filme */
+.movie_info h1,
+.movie_info h2 {
+  margin-top: 14px; /* Margem superior */
+  font-size: 1.5em; /* Tamanho da fonte */
+  padding: 0px 0 10px 0; /* Preenchimento */
+}
+
+/* Estilos para os parágrafos dentro da seção de informações do filme */
+.movie_info p {
+  margin: 8px 0; /* Margem */
+  line-height: 1.6; /* Altura da linha */
+  font-size: 1.15em; /* Tamanho da fonte */
+  color: rgb(20, 18, 18); /* Cor do texto */
+  font-weight: 400; /* Peso da fonte */
+  text-align: justify; /* Alinhamento do texto */
+}
+
+/* Estilos para a data de lançamento */
+.release_date {
+  padding-left: 10px; /* Preenchimento à esquerda */
+  font-weight: 350; /* Peso da fonte */
+}
+
+/* Alinhamento dos elementos dentro do grid de título */
+.grid_title h1,
+.grid_title p,
+.area_buttons {
+  padding-left: 230px; /* Preenchimento à esquerda */
+}
+
+/* Estilos para a imagem dentro do grid de título */
+.grid_title_img {
+  position: absolute; /* Posição absoluta */
+  max-width: 200px; /* Largura máxima */
+}
+
+/* Estilos para a imagem dentro do grid de título */
+.grid_title_img img {
+  width: 100%; /* Largura */
+  margin-top: 57px; /* Margem superior */
+  border-radius: 5px; /* Raio da borda */
+  border: 2px solid #ffffff; /* Borda */
+}
+
+
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  /* Redefine a posição e largura da imagem no grid de título */
+  .grid_title_img {
+    position: unset; /* Remove a posição absoluta */
+    max-width: unset; /* Remove a largura máxima */
+    display: flex; /* Altera para exibição flexível */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+  }
+
+  /* Ajusta a largura da imagem no grid de título */
+  .grid_title_img img {
+    width: 200px; /* Define a largura da imagem */
+  }
+
+  /* Redefine o preenchimento do título, parágrafo e botões */
+  .grid_title h1,
+  .grid_title p,
+  .area_buttons {
+    padding-left: unset; /* Remove o preenchimento à esquerda */
+  }
+
+  /* Ajusta a altura mínima do título para ocupar a tela inteira */
+  .title {
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da tela */
+  }
+
+  /* Ajusta o estilo do título */
+  .title h1 {
+    font-size: 1.5em !important; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    padding-top: 10px; /* Define o preenchimento superior */
+    width: unset; /* Remove a largura */
+  }
+
+  /* Ajusta o estilo do parágrafo no título */
+  .title p {
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 0.95em !important; /* Define o tamanho da fonte */
+    padding-top: 5px; /* Define o preenchimento superior */
+  }
+
+  /* Ajusta o estilo dos botões na área de botões */
+  .area_buttons {
+    text-align: center; /* Alinha os botões ao centro */
+  }
+
+  /* Ajusta o estilo do botão */
+  .area_buttons button {
+    font-size: 15px; /* Define o tamanho da fonte */
+    width: 140px; /* Define a largura do botão */
+    padding: 7px !important; /* Define o preenchimento */
+  }
+
+  /* Ajusta o estilo da seção de informações do filme */
+  .movie_info {
+    margin: 50px auto; /* Margem */
+    padding-left: 20px; /* Preenchimento à esquerda */
+    padding-right: 20px; /* Preenchimento à direita */
+  }
+}
+
+/* Estilos para telas menores que 320px */
+@media screen and (max-width: 320px) {
+  /* Ajusta a largura da imagem no grid de título */
+  .grid_title_img img {
+    width: 180px; /* Define a largura da imagem */
+  }
+
+  /* Remove a margem direita do primeiro botão na área de botões */
+  .area_buttons button:first-child {
+    margin-right: unset; /* Remove a margem direita */
+  }
+
+  /* Ajusta o estilo do botão na área de botões */
+  .area_buttons button {
+    width: 70%; /* Define a largura do botão */
+    padding: 5px !important; /* Define o preenchimento */
+    margin-top: 10px; /* Define a margem superior */
+  }
+
+  /* Ajusta o estilo do segundo botão na área de botões */
+  .area_buttons button:nth-child(2) {
+    margin-top: 10px; /* Define a margem superior */
+  }
+
+  /* Ajusta o estilo do título */
+  .title h1 {
+    font-size: 1.5em !important; /* Define o tamanho da fonte */
+  }
+
+  /* Ajusta o estilo do parágrafo no título */
+  .title p {
+    font-size: 0.9em !important; /* Define o tamanho da fonte */
+  }
+}

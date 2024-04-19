@@ -1,0 +1,29 @@
+/* Estilos para o container da página de erro */
+.not_found {
+  display: flex; /* Usa um modelo de layout flexível */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  flex-direction: column; /* Organiza os elementos em uma coluna */
+  width: 100%; /* Largura total */
+  height: calc(100vh - 130px); /* Altura ajustada */
+}
+
+/* Estilos para o título da página de erro */
+.not_found h1 {
+  font-size: 120px; /* Tamanho da fonte do título */
+}
+
+/* Estilos para o link de volta à página inicial */
+.not_found a {
+  text-decoration: none; /* Remove a decoração de texto */
+  background-color: #3E98C7; /* Cor de fundo do link */
+  color: #ffffff; /* Cor do texto */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Raio da borda */
+  margin-top: 14px; /* Margem superior */
+}
+
+/* Estilos para o link de volta à página inicial ao passar o mouse */
+.not_found a:hover {
+  background-color: #000000; /* Altera a cor de fundo ao passar o mouse */
+}

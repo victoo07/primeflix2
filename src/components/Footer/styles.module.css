@@ -1,0 +1,37 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0; /* Adicionado padding para melhor espaçamento */
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Adicionado margem inferior para separar os ícones das redes sociais do texto */
+}
+
+.social a {
+  margin: 0 10px; /* Espaçamento entre os ícones das redes sociais */
+  color: #fff;
+  font-size: 24px; /* Tamanho dos ícones */
+}
+
+.footer p {
+  font-size: 0.9em;
+  margin-top: 10px; /* Adicionado margem superior para separar o texto do restante do footer */
+}
+
+.footer span {
+  font-weight: bold;
+}
+
+.social a:hover {
+
+  color: #116feb;
+}
+

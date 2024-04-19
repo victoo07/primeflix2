@@ -1,0 +1,98 @@
+/* Estilos para o container principal */
+.container {
+  height: calc(100vh - 130px); /* Calcula a altura para ocupar a tela menos 130px */
+  display: inline-table; /* Define o elemento como uma tabela em linha */
+}
+
+/* Estilos para a lista de filmes */
+.my_movies {
+  margin-top: 24px; /* Margem superior */
+  display: flex; /* Usa um modelo de layout flexível */
+  flex-direction: column; /* Organiza os elementos em uma coluna */
+  align-items: center; /* Alinha os itens horizontalmente ao centro */
+  overflow: visible; /* Permite que o conteúdo ultrapasse os limites do elemento */
+}
+
+/* Estilos para os botões na área de botões */
+.area_buttons button {
+  margin: 5px; /* Margem entre os botões */
+  font-weight: 450; /* Peso da fonte */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilos para o título na lista de filmes */
+.my_movies h1 {
+  margin-bottom: 14px; /* Margem inferior */
+}
+
+/* Estilos para o texto na lista de filmes */
+.my_movies span {
+  font-size: 18px; /* Tamanho da fonte */
+}
+
+/* Estilos para o link na lista de filmes */
+.my_movies span a {
+  text-decoration: none; /* Remove a decoração de texto */
+  color: #000000; /* Cor do texto */
+}
+
+/* Estilos para a lista de filmes */
+.my_movies ul {
+  width: 100%; /* Largura total */
+  min-width: 750px; /* Largura mínima */
+  margin-bottom: 24px; /* Margem inferior */
+}
+
+/* Estilos para os itens na lista de filmes */
+.my_movies ul li {
+  list-style: none; /* Remove os marcadores de lista */
+  display: flex; /* Usa um modelo de layout flexível */
+  justify-content: space-between; /* Espaço uniformemente entre os elementos */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-bottom: 14px; /* Margem inferior */
+  background-color: #ffffff; /* Cor de fundo */
+  padding: 12px; /* Espaçamento interno */
+  border-radius: 5px; /* Raio da borda */
+  box-shadow: 0 1px 4px rgb(0 0 0 / 16%); /* Sombra */
+}
+
+/* Estilos para os itens na lista de filmes ao passar o mouse */
+.my_movies ul li:hover {
+  transform: scale(1.04); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+  transition: all 0.4s ease 0s; /* Transição suave */
+}
+
+/* Estilos para a área de botões na lista de filmes */
+.my_movies div {
+  display: flex; /* Usa um modelo de layout flexível */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+/* Estilos para os links dentro da área de botões na lista de filmes */
+.my_movies div a {
+  text-decoration: none; /* Remove a decoração de texto */
+}
+
+/* Estilos para a responsividade em telas menores */
+@media screen and (max-width: 768px) {
+  .my_movies ul {
+    min-width: auto; /* Remove a largura mínima */
+    padding: 10px; /* Espaçamento interno */
+  }
+
+  .my_movies ul li {
+    width: 100%; /* Largura total */
+    display: inline-block; /* Exibe os itens em linha */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .my_movies ul li span a {
+    padding-bottom: 300px; /* Adiciona um espaço adicional na parte inferior */
+  }
+
+  .area_buttons button {
+    margin-top: 10px; /* Margem superior */
+    padding: 10px; /* Espaçamento interno */
+  }
+}

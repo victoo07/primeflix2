@@ -1,0 +1,37 @@
+/* Estilos para o cabeçalho */
+header {
+  display: flex; /* Usa um modelo de layout flexível */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-around; /* Distribui o espaço ao redor dos itens */
+  width: 100%; /* Largura total */
+  height: 60px; /* Altura */
+  background-color: #000000; /* Cor de fundo */
+}
+
+/* Estilos para o logotipo */
+.logo {
+  font-size: 30px; /* Tamanho da fonte */
+  color: #ffffff; /* Cor do texto */
+  font-weight: bold; /* Peso da fonte */
+}
+
+/* Estilos para o link 'Meus Filmes' */
+.favorites {
+  background-color: #ffffff; /* Cor de fundo */
+  padding: 8px 14px; /* Espaçamento interno */
+  color: #000000; /* Cor do texto */
+  border-radius: 5px; /* Borda arredondada */
+  font-weight: 450; /* Peso da fonte */
+}
+
+/* Estilos quando o cursor passa por cima do link 'Meus Filmes' */
+.favorites:hover {
+  background-color: #116feb; /* Cor de fundo ao passar o cursor */
+  color: #ffffff; /* Cor do texto ao passar o cursor */
+}
+
+/* Estilos compartilhados para o logotipo e o link 'Meus Filmes' */
+.logo, .favorites {
+  text-decoration: none; /* Remove a decoração de texto */
+  cursor: pointer; /* Cursor do mouse */
+}

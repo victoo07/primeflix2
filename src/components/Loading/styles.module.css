@@ -1,0 +1,12 @@
+/* Estilos para o componente de carregamento */
+.loading {
+  display: flex; /* Usa um modelo de layout flexível */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  height: calc(100vh - 130px); /* Altura ajustada */
+}
+
+/* Estilos para o texto dentro do componente de carregamento */
+.loading h2 {
+  font-weight: 300; /* Peso da fonte */
+}

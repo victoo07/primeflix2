@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Prime Flix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Preview](https://github.com/lucasdealmeidadev/primeflix/blob/main/primeflix.png?raw=true)
 
-## Available Scripts
+Construindo uma plataforma de filmes com ReactJS. Esse projeto foi uma ampliação da aula ministrada por **Matheus Fraga** no treinamento **Full Stack**.
 
-In the project directory, you can run:
+Foram adicionados os seguintes recursos ao projeto:
 
-### `npm start`
+- Layout remodelado;
+- Adicionado responsividade a todos as páginas da aplicação;
+- Adição de recurso de busca para pesquisa de filmes, series ou pessoas;
+- Adicionado recurso de paginação ao projeto;
+- Adicionado o recurso de Lazy loading para otimização de performance via carregamento inteligente das imagens;
+- Adicionado ProgressBar via componente para melhor exibição da avaliação do(s) filme(s);
+- Adicionado informações extras na página home e na de visualização do filme conforme disponibilizado na API do The Movie DB;
+- Adicionado biblioteca de icones Font Awesome ao projeto;
+- Por fim, foi adicionado os compomentes Button e Loading para auxiliar no desenvolvimento do projeto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Recursos utilizados
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **[API The Movie Database](https://developers.themoviedb.org/3/getting-started)**
+* **[Axios](https://www.npmjs.com/package/axios)**
+* **[Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)**
+* **[React](https://pt-br.reactjs.org/)**
+* **[React Circular Progressbar](https://www.npmjs.com/package/react-circular-progressbar)**
+* **[React Dom](https://www.npmjs.com/package/react-dom)**
+* **[React Lazy Load Image Component](https://www.npmjs.com/package/react-lazy-load-image-component)**
 
-### `npm test`
+## 🔥 Executando a aplicação no ambiente local
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Caso você deseja executar o projeto na sua máquina local, basta seguir os passos abaixo:
 
-### `npm run build`
+### 🌀 Começando... 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para começar, você deve simplesmente clonar o repositório do projeto na sua máquina e instalar as dependências.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Abra o cmd (caso esteja utilizando o Windows) navegue até o local onde você clonou o projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cd "C:\Users\NomeDoComputador\Documents\cloneprojeto"
+```
 
-### `npm run eject`
+Depois, quando estiver na pasta do projeto, basta digitar no cmd a seguinte instrução: **(dentro da pasta do projeto clonado)**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ao digitar a instrução acima, automaticamente ele irá baixar todas as dependências listadas e definidas no arquivo package.json:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* `node_modules` - que contêm os packages do npm que precisará para o projeto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 💨 Executando a aplicação 
 
-## Learn More
+No diretório do projeto execute o camando abaixo para executar o projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+> npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚩 Tenho dúvidas... O que fazer? 
 
-### Code Splitting
+Caso tenham dúvidas sobre o código do projeto, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/lucasdealmeidadev/primeflix/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licença
 
-### Analyzing the Bundle Size
+* Licenciado sob a licença MIT - veja [LICENSE](https://github.com/lucasdealmeidadev/primeflix/blob/main/LICENCE) para mais informações.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+----------
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por Lucas de Almeida Monteiro (:  👋  [ Entrar em contato!!](https://www.linkedin.com/in/lucas-de-almeida-monteiro)

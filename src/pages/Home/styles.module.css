@@ -1,0 +1,250 @@
+/* Estilos para o container principal */
+.container {
+  display: block; /* Define o elemento como um bloco */
+  width: inherit; /* Herda a largura do elemento pai */
+  min-height: calc(100vh - 130px); /* Calcula a altura mínima para ocupar a tela menos 130px */
+}
+
+/* Estilos para a lista de filmes e resultados de pesquisa */
+.list_movies,
+.search_movies {
+  display: flex; /* Usa um modelo de layout flexível */
+  flex-wrap: wrap; /* Permite que os elementos sejam envoltos em várias linhas */
+  justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal com espaço extra entre eles */
+  max-width: 1150px; /* Largura máxima */
+  margin: 65px auto; /* Margem externa superior e inferior */
+}
+
+/* Estilos para o título na área principal */
+.title {
+  width: 100%; /* Largura total */
+  background-repeat: no-repeat; /* Não repete o plano de fundo */
+  background-size: cover; /* Redimensiona a imagem do plano de fundo para cobrir toda a área */
+  background-attachment: fixed; /* Mantém a posição do plano de fundo fixa */
+  min-height: 300px; /* Altura mínima */
+  height: calc(100vh / 2.5); /* Calcula a altura para ocupar 2.5 partes da altura da tela */
+  max-height: 360px; /* Altura máxima */
+  background-image: linear-gradient(to right, rgba(var(--primeflixDark), 0.8) 50%, rgba(var(--primeflixDark), 0.55) 100%), url('../../assets/images/background_default.jpg'); /* Imagem de fundo com gradiente */
+}
+
+/* Estilos para o grid de título */
+.grid_title {
+  max-width: 1150px; /* Largura máxima */
+  margin: 0px auto; /* Margem externa */
+}
+
+/* Estilos para o título principal */
+.title h1 {
+  font-size: 3em !important; /* Tamanho da fonte do título */
+  font-weight: 700; /* Peso da fonte */
+  line-height: 1.5; /* Altura da linha */
+  padding-top: 57px; /* Preenchimento superior */
+  color: #ffffff; /* Cor do texto */
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 30%); /* Sombra do texto */
+}
+
+/* Estilos para o parágrafo no título */
+.title p {
+  font-size: 1.2em !important; /* Tamanho da fonte do parágrafo */
+  font-weight: 500; /* Peso da fonte */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para a entrada de pesquisa no título */
+.title form input {
+  padding: 15px 20px; /* Preenchimento interno */
+  border: none; /* Remove a borda */
+  border: 1px solid #cccccc; /* Borda sólida */
+  width: 90%; /* Largura */
+  height: 50px; /* Altura */
+  outline: none; /* Remove o contorno */
+  margin-top: 20px; /* Margem superior */
+  border-top-left-radius: 30px; /* Raio da borda superior esquerda */
+  border-bottom-left-radius: 30px; /* Raio da borda inferior esquerda */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilos para o botão de pesquisa no título */
+.title form button {
+  width: 10%; /* Largura */
+  height: 50px; /* Altura */
+  background-color: #3E98C7; /* Cor de fundo */
+  padding: 15px 20px; /* Preenchimento interno */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  border-top-right-radius: 30px; /* Raio da borda superior direita */
+  border-bottom-right-radius: 30px; /* Raio da borda inferior direita */
+  transition: all 0.5s; /* Transição suave */
+}
+
+/* Estilos para o ícone no botão de pesquisa */
+.title form button svg {
+  color: #ffffff; /* Cor do ícone */
+}
+
+/* Estilos para o botão de pesquisa ao passar o mouse */
+.title form button:hover {
+  background-color: #116feb; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para os itens na lista de filmes */
+.list_movies article {
+  display: flex; /* Usa um modelo de layout flexível */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  margin-bottom: 2.5em; /* Margem inferior */
+  width: 18%; /* Largura */
+  height: 400px; /* Altura */
+  color: #ffffff; /* Cor do texto */
+  border-radius: 5px; /* Raio da borda */
+  background-color: #ffffff; /* Cor de fundo */
+  box-shadow: 0 1px 4px rgb(0 0 0 / 16%); /* Sombra */
+}
+
+/* Estilos para o rodapé do card */
+.card_footer {
+  padding: 0.5em; /* Preenchimento */
+  text-align: center; /* Alinhamento do texto */
+  justify-items: center; /* Alinhamento dos itens */
+}
+
+/* Estilos para os itens na lista de filmes ao passar o mouse */
+.list_movies article:hover {
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+  transition: all 0.4s ease 0s; /* Transição suave */
+}
+
+.list_movies strong {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  display: block;
+  color: rgb(20, 18, 18);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.list_movies strong:hover {
+  color: #116feb;
+  text-decoration: underline;
+  text-decoration-color: #116feb;
+}
+
+.list_movies img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.list_movies a {
+  text-decoration: none;
+}
+
+.list_movies p {
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.list_movies .progressbar {
+  background-color: #ffffff;
+  width: 45px;
+  height: 45px;
+  margin-top: -30px;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 16%);
+  z-index: 1;
+}
+
+.list_movies .progressbar text {
+  font-size: 1.7em;
+  font-weight: bold;
+  user-select: none;
+}
+
+.search_movies {
+  width: 100%;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.search_h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+/* Estilização para o botão de carregar mais filmes */
+.load_more {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.load_more button {
+  padding: 10px 20px;
+  background-color: #3E98C7;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.load_more button:hover {
+  background-color: #116feb;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .grid_title {
+    padding: 10px;
+  }
+  
+  .list_movies {
+    padding: 10px;
+  }
+
+  .list_movies article {
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .list_movies article {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .list_movies article {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .title form input {
+    width: 80%;
+  }
+
+  .title form button {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .list_movies article {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px) {
+  .list_movies article {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
